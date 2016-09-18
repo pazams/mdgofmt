@@ -1,3 +1,8 @@
+[travis-url]: https://travis-ci.org/pazams/mdgofmt
+[travis-image]: https://api.travis-ci.org/pazams/mdgofmt.svg
+[coveralls-image]: https://coveralls.io/repos/pazams/mdgofmt/badge.svg?branch=master&service=github
+[coveralls-url]: https://coveralls.io/r/pazams/mdgofmt
+
 # mdgofmt [![Test coverage][coveralls-image]][coveralls-url] [![Build status][travis-image]][travis-url]
 Formats golang code blocks inside markdown (gfm)
 
@@ -48,8 +53,3 @@ func check(e error) {
 
 ## License
 MIT
-
-[travis-url]: https://travis-ci.org/pazams/mdgofmt
-[travis-image]: https://api.travis-ci.org/pazams/mdgofmt.svg
-[coveralls-image]: https://coveralls.io/repos/pazams/mdgofmt/badge.svg?branch=master&service=github
-[coveralls-url]: https://coveralls.io/r/pazams/mdgofmt
