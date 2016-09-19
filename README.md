@@ -14,30 +14,29 @@ $ go get github.com/pazams/mdgofmt
 #### Examples
 __Add to your project:__
 ```go
+package main
 
 import (
-	"fmt"
 	"github.com/pazams/mdgofmt"
 	"io/ioutil"
 )
 
 func main() {
-
-	in, err := ioutil.ReadFile("some file path")
+	in, err := ioutil.ReadFile("some markdown file path")
 	check(err)
 
 	out, err := mdgofmt.Format(in)
 	check(err)
-	
-	fmt.Println(out)
+
+	err = ioutil.WriteFile("some output file path", out, 0664)
+	check(err)
 }
 
 func check(e error) {
 	if e != nil {
-	  panic(e)
+		panic(e)
 	}
 }
-
 ```
 
 ## Before & After
