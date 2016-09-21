@@ -12,6 +12,10 @@ Formats golang code blocks inside markdown (gfm)
 $ go get github.com/pazams/mdgofmt
 ```
 #### Examples
+__Command-line interface:__
+
+see [here](https://github.com/pazams/mdgofmt-cli)
+
 __Add to your project:__
 ```go
 package main
@@ -38,6 +42,7 @@ func check(e error) {
 	}
 }
 ```
+
 
 ## Before & After
 [before](https://github.com/pazams/mdgofmt/blob/master/testdata/struct.md)
