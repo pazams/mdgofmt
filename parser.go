@@ -3,6 +3,7 @@ package mdgofmt
 import (
 	"errors"
 	"regexp"
+	"strings"
 )
 
 type codeBlock struct {
@@ -79,7 +80,7 @@ func isGoCodeBlockStart(bytes []byte) bool {
 		return false
 	}
 
-	if string(bytes[3:5]) == "go" {
+	if strings.ToUpper(string(bytes[3:5])) == "GO" {
 		return true
 	} else {
 		return false
